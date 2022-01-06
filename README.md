@@ -64,7 +64,23 @@ Some screenshoots of each Module:
 ![image](https://user-images.githubusercontent.com/74001872/148329350-0679d39f-e849-4df8-a098-c60e9a4b07c1.png)
 2)Login and Register Page:
 ![image](https://user-images.githubusercontent.com/74001872/148329380-256be6de-c7c5-459d-a925-7a5510bc0d10.png)
-3)
+3)user home page:
+![image](https://user-images.githubusercontent.com/74001872/148330469-24efb516-fe58-4c61-96f5-7d90155a34d2.png)
+4)Apply loan page:
+![image](https://user-images.githubusercontent.com/74001872/148331261-8fda2ce0-18f5-4371-b818-fce9eda708b1.png)
+![image](https://user-images.githubusercontent.com/74001872/148331932-30c6158a-565f-49cc-9fd0-aa3e1bb678d7.png)
+![image](https://user-images.githubusercontent.com/74001872/148331946-e40bfe9e-9b15-487d-8a49-004c704f2ae7.png)
+checking status:
+![image](https://user-images.githubusercontent.com/74001872/148334471-cda060b7-1423-4ed7-b4c1-134d11e7c27d.png)
+![image](https://user-images.githubusercontent.com/74001872/148335006-f488f111-4a60-4a25-a9b6-1d6ef5c24e00.png)
+Admin login:
+------------
+Admin dashboard:
+![image](https://user-images.githubusercontent.com/74001872/148336563-20afc355-59ba-41b3-a63f-0e7d7f000222.png)
+![image](https://user-images.githubusercontent.com/74001872/148337680-d6e75b14-6e19-4c37-8236-a20f8686c507.png)
+![image](https://user-images.githubusercontent.com/74001872/148337702-d4ed40bb-4eba-457b-bba4-ef1dc036194a.png)
+
+
 
 
   
