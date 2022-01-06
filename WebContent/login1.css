@@ -1,0 +1,21 @@
+@charset "ISO-8859-1";
+body{
+	height:50%;
+	background-image:url('https://thumbs.dreamstime.com/b/bank-loan-spelled-out-tiles-94994526.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+  .login {
+    
+    display: block;
+    margin-left: auto;
+    border: none;
+    outline: none;
+    background: #ff652f;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }

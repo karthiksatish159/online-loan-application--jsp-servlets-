@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function checkform1()
+{
+    		var un,ep,stg1,stg2;
+    		
+			 un=f1.uname.value;
+      		 ep=f1.pword.value;
+      		  stg1 = document.getElementById('capt').value;
+              stg2 = document.getElementById('textinput').value;
+ 			 if(un=="")
+       		 {
+       			window.alert("Please enter username");
+   		 		return false;
+       		 }
+           	 else if(ep=="")
+       		 {
+       			window.alert("Enter the password")
+   		 		return false;
+       		 }
+           	 else if(stg1=="")
+           		 {
+           		alert("Please click on captcha image to get captcha");
+           		return false;
+           		 }
+           	 else if(stg1!=stg2)
+           	 {
+           		alert("Please enter a valid captcha");
+               		return false;
+             	}
+           	 else
+           	{
+        	 
+           		 		return true;
+           	}
+           	 		
+           
+}
+function checkform2()
+{
+	window.location.href = "register.html";
+}
+function checkform3()
+{
+	window.location.href = "forgot.html";
+}
+function cap1()
+{
+    var alpha = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V'
+                 ,'W','X','Y','Z','1','2','3','4','5','6','7','8','9','0','a','b','c','d','e','f','g','h','i',
+                 'j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z', '!','@','#','$','%','^','&','*','+'];
+                 var a = alpha[Math.floor(Math.random()*71)];
+                 var b = alpha[Math.floor(Math.random()*71)];
+                 var c = alpha[Math.floor(Math.random()*71)];
+                 var d = alpha[Math.floor(Math.random()*71)];
+                 var e = alpha[Math.floor(Math.random()*71)];
+                 var f = alpha[Math.floor(Math.random()*71)];
+
+                 var final = a+b+c+d+e+f;
+                 document.getElementById("capt").value=final;
+ }
+   
+</script>
+<link rel="stylesheet" type="text/css" href="login2.css">
+</head>
+<body>
+<div class="form">
+<form action="Login1servlet" method="post" name="f1">
+<center><h1>Login</h1></center>
+<input type="text" placeholder="username" name="uname" value="">
+<input type="password" placeholder="password" id="password" name="pword" value="">
+
+ <label>Enter Captcha:</label>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <input type="text" class="form-control"  readonly id="capt" >
+        </div>
+        <div class="form-group col-md-6">
+          <input type="text" class="form-control" id="textinput" >
+        </div>
+      </div>
+<input type="submit" value="login" onclick="return checkform1()">
+<input type="button" value="Register" onclick="return checkform2()">
+<input type="button" value="Forgot password ? " onclick="return checkform3()">
+<h2>Captcha <img src="https://www.freeiconspng.com/thumbs/refresh-icon/refresh-icon-0.png" width="40px" onclick="cap1()"></h2>
+</form>
+</div>
+</body>
+</html>

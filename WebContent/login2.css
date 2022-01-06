@@ -1,0 +1,51 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background:lightblue;
+	font-family:sans-serif;
+	background-image:url('https://thumbs.dreamstime.com/b/bank-loan-spelled-out-tiles-94994526.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+.form{
+	width:320px;
+	background:#3e3d3d;
+	padding:40px 20px;
+	box-sizing:border-box;
+	position:fixed;
+	left:50%;
+	top:50%;
+	transform:translate(-50%,-50%);
+	
+}
+input{
+	width:100%;
+	background:none;
+	border:1px solid #fff;
+	border-radius:3px;
+	padding:6px 13px;
+	box-sizing:border-box;
+	margin-bottom:22px;
+	font-size:16px;
+	color:#fff;
+}
+input[type="button"]{
+	background:#bac675;
+	border:0;
+	cursor:pointer;
+	color:#3e3d3d;
+	
+}
+input[type="button"]:hover{
+	background:#a4b15c;
+	transition:.8s;
+	
+	
+}
+::placeholder{
+	color:#fff;
+	
+}

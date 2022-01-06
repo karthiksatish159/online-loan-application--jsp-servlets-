@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+var c=0;
+function ageCalculator() { 
+	
+    var userinput = document.getElementById("DOB").value;  
+    var dob = new Date(userinput);  
+    if(userinput==null || userinput=="") {  
+      document.getElementById("message").innerHTML = "";    
+      return true;   
+    } else {  
+      
+   
+    var month_diff = Date.now() - dob.getTime();  
+      
+ 
+    var age_dt = new Date(month_diff);   
+      
+   
+    var year = age_dt.getUTCFullYear();  
+        
+    var age = Math.abs(year - 1970);  
+      
+   if(age>18 && age<=75)
+	   {
+	   	return false;   
+	   }
+   else if(age>75)
+	   {
+	   		c=1;
+	   		return true;
+	   }
+   else
+	   {
+	  	 c=2;
+  		return true;
+	   }
+    
+    }  
+}  
+function checkform()
+{
+    var fn,ln,ep,cp,db,nt,ad,gen1,gen2,un,em,po,textLength;
+    	     fn=f1.fna.value;
+			 ln=f1.lna.value;
+			 un=f1.uname.value;
+      		 ep=f1.pword.value;
+      		 em=f1.mail.value;
+           	 cp=f1.pcword.value;
+           	 po=f1.ph.value;
+          
+           	 if(fn=="")
+           		 {
+           		 	window.alert("Enter the firstname")
+           		 	return false;
+           		 }
+           	else if(ln=="")
+           		 {
+           			window.alert("Enter the lastname")
+       		 		return false;
+           		 }
+           	 else if(un=="")
+           		 {
+           		window.alert("Enter the username")
+   		 		return false;
+           		 }
+           	else if(em=="")
+      		 {
+      			window.alert("Enter the email")
+  		 		return false;
+      		 }
+           	 else if(ep=="")
+       		 {
+       			window.alert("Enter the password")
+   		 		return false;
+       		 }
+           	 else if(cp=="")
+       		 {
+       			window.alert("Enter the confirm password")
+   		 		return false;
+       		 }
+           	 else if(ep!=cp)
+       		 {
+       			window.alert("Check the confirm password it is mismatch");
+   		 		return false;
+       		 }
+           	 else if(ageCalculator())
+           		 {
+           		 	if(c==0)
+           		 	{
+           				window.alert("choose the date");
+           				return false;
+           		 	}
+           		 if(c==1)
+        		 	{
+        				window.alert("Sir according to government norms above 75 age is not allowed");
+        				return false;
+        		 	}
+           		if(c==2)
+    		 	{
+    				window.alert("Sir according to government norms below 18 age is not allowed");
+    				return false;
+    		 	}
+           			return false;
+           		 }
+           	 else if(po=="")
+       		 {
+       			window.alert("Please enter your phone_number");
+   		 		return false;
+       		 }
+           	 else
+           	{
+           		 
+           		 		return true;
+           	}
+           	 		
+           
+}
+</script>
+
+<link rel="stylesheet" type="text/css" href="login2.css">
+</head>
+<body>
+<div class="form">
+<form action="Register1servlet" method="post" name="f1">
+<center><h1>Register</h1></center>
+<input type="text" placeholder="firstname" name="fna">
+<input type="text" placeholder="lastname" name="lna">
+<input type="text" placeholder="username" name="uname">
+<input type="email" placeholder="email" name="mail">
+<input type="password" placeholder="password" name="pword">
+<input type="password" placeholder="Confirmpassword" name="pcword">
+<input type="date" placeholder="date" id="DOB" name="date">
+<span id = "message" style="color:red"> </span> 
+<input type="text" name="ph" pattern="[1-9]{1}[0-9]{9}" title="Enter 10 digit mobile number" placeholder="Mobile number" required>
+<input type="submit"  value="Register" onclick="return checkform() " style="background-color:#bac675;color:black;">
+</form>
+</div>
+</body>
+</html>

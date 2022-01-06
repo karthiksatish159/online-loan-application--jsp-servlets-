@@ -1,0 +1,35 @@
+body {
+	background: #0b3b69;
+	font-family: arial;
+	font-size: 6px;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+header h1 {
+	color: rgba(240,240,240,1);
+	font-family: 'black_jackregular';
+	font-weight: bold;
+	font-size: 8em;
+	font-variant: small-caps;
+	line-height: 1.5;
+	padding: 0.2em 0 0 0;
+	height: 1.5em;
+	width: 100%;
+	text-align: center;
+	text-shadow: 1px 1px 4px rgba(10,10,10,1);
+}
+
+input[type="button"]{
+	background:#bac675;
+	border:0;
+	cursor:pointer;
+	color:#3e3d3d;
+	
+}
+input[type="button"]:hover{
+	background:#a4b15c;
+	transition:.8s;
+	
+	
+}

@@ -1,0 +1,599 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Admin Dashboard</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="../img/loan.png" sizes="16x16" type="image/png">
+    <link href="Astyle.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body class="admin-body">
+    <div class="wrapper wrapper-admin">
+        <!-- Navigation -->
+        <nav>
+            <ul>
+                <div class="nav-logo">
+                    <li><a href="index.html" class="logo">Western Bank</a></li>
+                </div>
+                <div class="nav-menu">
+                    <li><a href="index.html">Log Out</a></li>
+                </div>
+            </ul>
+
+            <ul class="toggle">
+                <div class="nav-toggle">
+                    <ul>
+                        <li><a href="index.html">Log Out</a></li>
+                    </ul>
+                </div>
+            </ul>
+        </nav>
+        <div class="admin-header">
+
+        </div>
+        <div class="admin-content">
+            <div class="sidebar">
+                <ul class="list">
+                    <li data-target="#verify"><i class="fas fa-user-check" class="active"></i>Verification</li>
+                    <li data-target="#apply"><i class="fas fa-hand-holding-usd"></i>Loan Applications</li>
+                    <li data-target="#current"><i class="fas fa-spinner"></i>Loans</li>
+                    <li data-target="#singleLoan"><i class="fas fa-hand-holding-usd"></i>View Single Loan</li>
+                    <li data-target="#approval"><i class="fas fa-check-double"></i>Loan Approval</li>
+                    <li data-target="#repay"><i class="fas fa-money-bill-wave"></i>Post Loan Repayment</li>
+                </ul>
+            </div>
+            <div class="inner-content">
+                <div class="panel active" id="verify">
+                    <div class="caption">Users Application</div>
+                    <div id="table">
+                        <div class="header-row row">
+                            <span class="cell primary">Email</span>
+                            <span class="cell">First Name</span>
+                            <span class="cell">Last Name</span>
+                            <span class="cell">Created Date</span>
+                            <span class="cell"></span>
+                        </div>
+                        <div class="row">
+                            <input type="radio" name="expand">
+                            <span class="cell primary" data-label="Email">kazmobileapp@gmail.com</span>
+                            <span class="cell" data-label="First Name">Kazeem</span>
+                            <span class="cell" data-label="Last Name">Odutola</span>
+                            <span class="cell" data-label="Created On">2019-06-09</span>
+                            <span class="cell" data-label="Trans"><a class="trigger_popup" href="#">view</a></span>
+                        </div>
+                        <div class="row">
+                            <input type="radio" name="expand">
+                            <span class="cell primary" data-label="Email">kaztech2016@gmail.com</span>
+                            <span class="cell" data-label="First Name">Oluwatobi</span>
+                            <span class="cell" data-label="Last Name">Odutola</span>
+                            <span class="cell" data-label="Created On">2019-05-05</span>
+                            <span class="cell" data-label="Trans"><a class="trigger_popup" href="#">view</a></span>
+                        </div>
+                        <div class="row">
+                            <input type="radio" name="expand">
+                            <span class="cell primary" data-label="Email">kazmobileapp@hotmail.com</span>
+                            <span class="cell" data-label="First Name">Tope</span>
+                            <span class="cell" data-label="Last Name">Ayegbe</span>
+                            <span class="cell" data-label="Created On">2019-10-05</span>
+                            <span class="cell" data-label="Trans"><a class="trigger_popup" href="#">view</a></span>
+                        </div>
+                        <div class="row">
+                            <input type="radio" name="expand">
+                            <span class="cell primary" data-label="Email">quickcreditapp@gmail.com</span>
+                            <span class="cell" data-label="First Name">Emmanuel</span>
+                            <span class="cell" data-label="Last Name">Odutola</span>
+                            <span class="cell" data-label="Created On">2019-05-05</span>
+                            <span class="cell" data-label="Trans"><a class="trigger_popup" href="#">view</a></span>
+                        </div>
+                        <input type="radio" name="expand">
+                        <span class="cell primary" data-label="Email">newMail@gmail.com</span>
+                        <span class="cell" data-label="First Name">Kazeem</span>
+                        <span class="cell" data-label="Last Name">Akinola</span>
+                        <span class="cell" data-label="Created On">2019-05-05</span>
+                        <span class="cell" data-label="Trans"><a class="trigger_popup" href="#">view</a></span>
+                    </div>
+
+                </div>
+                <div class="panel" id="apply">
+                    <div class="pagination">
+                        <div class="caption">Loan Applications</div>
+                        <div id="table">
+                            <div class="header-row row">
+                                <span class="cell primary">User</span>
+                                <span class="cell">Created Date</span>
+                                <span class="cell">Amount</span>
+                                <span class="cell">Tenor</span>
+                                <span class="cell"></span>
+                            </div>
+                            <div class="row">
+                                <input type="radio" name="expand">
+                                <span class="cell primary" data-label="User">kazmobileapp@gmail.com</span>
+                                <span class="cell" data-label="CreatedOn">2019-05-05</span>
+                                <span class="cell" data-label="Amount">₦4000</span>
+                                <span class="cell" data-label="Engine">3</span>
+                                <span class="cell" data-label="Trans"><a class="trigger_popup_loan" href="#">view</a></span>
+                            </div>
+                            <div class="row">
+                                <input type="radio" name="expand">
+                                <span class="cell primary" data-label="User">kaztech2016@gmail.com</span>
+                                <span class="cell" data-label="CreatedOn">2019-05-05</span>
+                                <span class="cell" data-label="Amount">₦30000</span>
+                                <span class="cell" data-label="Engine">2</span>
+                                <span class="cell" data-label="Trans"><a class="trigger_popup_loan" href="#">view</a></span>
+                            </div>
+                            <div class="row">
+                                <input type="radio" name="expand">
+                                <span class="cell primary" data-label="User">tobi4real@gmail.com</span>
+                                <span class="cell" data-label="CreatedOn">2019-05-05</span>
+                                <span class="cell" data-label="Amount">₦1000</span>
+                                <span class="cell" data-label="Engine">2</span>
+                                <span class="cell" data-label="Trans"><a class="trigger_popup_loan" href="#">view</a></span>
+                            </div>
+                            <div class="row">
+                                <input type="radio" name="expand">
+                                <span class="cell primary" data-label="User">kazmobileapp@yahoo.com</span>
+                                <span class="cell" data-label="CreatedOn">2019-05-05</span>
+                                <span class="cell" data-label="Amount">₦7000</span>
+                                <span class="cell" data-label="Engine">10</span>
+                                <span class="cell" data-label="Trans"><a class="trigger_popup_loan" href="#">view</a></span>
+                            </div>
+                            <div class="row">
+                                <input type="radio" name="expand">
+                                <span class="cell primary" data-label="User">mail@hotmail.com</span>
+                                <span class="cell" data-label="CreatedOn">2019-05-05</span>
+                                <span class="cell" data-label="Amount">₦2000</span>
+                                <span class="cell" data-label="Engine">2</span>
+                                <span class="cell" data-label="Trans"><a class="trigger_popup_loan" href="#">view</a></span>
+                            </div>
+                            <div class="row">
+                                <input type="radio" name="expand">
+                                <span class="cell primary" data-label="User">kazmobileapp@mail.com</span>
+                                <span class="cell" data-label="CreatedOn">2019-05-05</span>
+                                <span class="cell" data-label="Amount">₦4000</span>
+                                <span class="cell" data-label="Engine">12</span>
+                                <span class="cell" data-label="Trans"><a class="trigger_popup_loan" href="#">view</a></span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="panel" id="current">
+                    <div class="pagination">
+                        <div class="caption">
+                        <ul class="current-repaid">
+                            <li data-target="#current-loan">current</li>
+                            <li data-target="#repaid-loan">repaid</li>
+                        </ul>
+                        </div>
+                        <div id="table">
+                            <div class="header-row row">
+                                <span class="cell primary">User</span>
+                                <span class="cell">Created Date</span>
+                                <span class="cell">Amount</span>
+                                <span class="cell">Repaid</span>
+                                <span class="cell"></span>
+                            </div>
+                            <div id = "current-loan" class="row">
+                                <input type="radio" name="expand">
+                                <span class="cell primary" data-label="User">kazmobileapp@gmail.com</span>
+                                <span class="cell" data-label="CreatedOn">2019-05-05</span>
+                                <span class="cell" data-label="Amount">₦4000</span>
+                                <span class="cell" data-label="Engine">false</span>
+                                <span class="cell" data-label="Trans"><a class="trigger_popup_loan" href="">view</a></span>
+                            </div>
+                            <div id = "current-loan" class="row">
+                                <input type="radio" name="expand">
+                                <span class="cell primary" data-label="User">kaztech2016@gmail.com</span>
+                                <span class="cell" data-label="CreatedOn">2019-05-05</span>
+                                <span class="cell" data-label="Amount">₦30000</span>
+                                <span class="cell" data-label="Engine">false</span>
+                                <span class="cell" data-label="Trans"><a class="trigger_popup_loan" href="">view</a></span>
+                            </div>
+                            <div id = "current-loan" class="row">
+                                <input type="radio" name="expand">
+                                <span class="cell primary" data-label="User">tobi4real@gmail.com</span>
+                                <span class="cell" data-label="CreatedOn">2019-05-05</span>
+                                <span class="cell" data-label="Amount">₦1000</span>
+                                <span class="cell" data-label="Engine">false</span>
+                                <span class="cell" data-label="Trans"><a class="trigger_popup_loan" href="">view</a></span>
+                            </div>
+                            <div id="repaid-loan" class="row pick">
+                                <input type="radio" name="expand">
+                                <span class="cell primary" data-label="User">kazmobileapp@gmail.com</span>
+                                <span class="cell" data-label="CreatedOn">2019-05-05</span>
+                                <span class="cell" data-label="Amount">₦4000</span>
+                                <span class="cell" data-label="Engine">true</span>
+                                <span class="cell" data-label="Trans"><a class="trigger_popup_loan" href="">view</a></span>
+                            </div>
+                            <div id="repaid-loan" class="row pick">
+                                <input type="radio" name="expand">
+                                <span class="cell primary" data-label="User">kaztech2016@gmail.com</span>
+                                <span class="cell" data-label="CreatedOn">2019-05-05</span>
+                                <span class="cell" data-label="Amount">₦30000</span>
+                                <span class="cell" data-label="Engine">true</span>
+                                <span class="cell" data-label="Trans"><a class="trigger_popup_loan" href="">view</a></span>
+                            </div>
+                            <div id="repaid-loan" class="row pick">
+                                <input type="radio" name="expand">
+                                <span class="cell primary" data-label="User">tobi4real@gmail.com</span>
+                                <span class="cell" data-label="CreatedOn">2019-05-05</span>
+                                <span class="cell" data-label="Amount">₦1000</span>
+                                <span class="cell" data-label="Engine">true</span>
+                                <span class="cell" data-label="Trans"><a class="trigger_popup_loan" href="">view</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel" id="singleLoan">
+                    <div class="form-container loan-input">
+                        <form class="loan" action="Users" method="post">
+                            <div class="input-container">
+                                <i class="fas fa-wallet icon"></i>
+                                <input type="text" class="input-field" placeholder="Username" name="uname">
+                            </div>
+                            <button type="submit" value="login" class="btn-form">View Loan</button>
+                        </form>
+                    </div>
+                    <div class="page">
+                        <table class="layout display responsive-table">
+                            <thead>
+                                <tr>
+                                    <th colspan="3">Retrieved Loan with an id: 4</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr>
+                                    <td class="loan-heading">user</td>
+                                    <td class="loan-body">kazileapp@gmail.com</td>
+
+                                </tr>
+
+                                <tr>
+                                    <td class="loan-heading">Created Date</td>
+                                    <td class="loan-body">2019-05-05</td>
+
+                                </tr>
+
+                                <tr>
+                                    <td class="loan-heading">Status</td>
+                                    <td class="loan-body">Approved</td>
+
+                                </tr>
+
+                                <tr>
+                                    <td class="loan-heading">Repaid</td>
+                                    <td class="loan-body">
+                                        false
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td class="loan-heading">Tenor</td>
+                                    <td class="loan-body">
+                                        5
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td class="loan-heading">Amount</td>
+                                    <td class="loan-body">
+                                        ₦20000
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td class="loan-heading">Payment Installment</td>
+                                    <td class="loan-body">
+                                        ₦5500
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td class="loan-heading">Balance</td>
+                                    <td class="loan-body">
+                                        ₦25000
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td class="loan-heading">Interest</td>
+                                    <td class="loan-body">
+                                        ₦500
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="panel" id="approval">
+                    <div class="pagination">
+                        <div class="pagination-content">
+                            <div class="caption">Loan waiting for approval</div>
+                            <div id="table">
+                                <div class="header-row row">
+                                    <span class="cell primary">User</span>
+                                    <span class="cell">Created Date</span>
+                                    <span class="cell">Amount</span>
+                                    <span class="cell">Repaid</span>
+                                    <span class="cell"></span>
+                                </div>
+                                <div class="row">
+                                    <input type="radio" name="expand">
+                                    <span class="cell primary" data-label="User">kazmobileapp@gmail.com</span>
+                                    <span class="cell" data-label="CreatedOn">2019-05-05</span>
+                                    <span class="cell" data-label="Amount">₦4000</span>
+                                    <span class="cell" data-label="Engine">false</span>
+                                    <span class="cell" data-label="Trans"><a class="trigger_popup_approveloan" href="">view</a></span>
+                                </div>
+                                <div class="row">
+                                    <input type="radio" name="expand">
+                                    <span class="cell primary" data-label="User">kaztech2016@gmail.com</span>
+                                    <span class="cell" data-label="CreatedOn">2019-05-05</span>
+                                    <span class="cell" data-label="Amount">₦30000</span>
+                                    <span class="cell" data-label="Engine">false</span>
+                                    <span class="cell" data-label="Trans"><a class="trigger_popup_approveloan" href="">view</a></span>
+                                </div>
+                                <div class="row">
+                                    <input type="radio" name="expand">
+                                    <span class="cell primary" data-label="User">tobi4real@gmail.com</span>
+                                    <span class="cell" data-label="CreatedOn">2019-05-05</span>
+                                    <span class="cell" data-label="Amount">₦1000</span>
+                                    <span class="cell" data-label="Engine">false</span>
+                                    <span class="cell" data-label="Trans"><a class="trigger_popup_approveloan" href="">view</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel" id="repaid">
+                        <div class="pagination">
+                            <div class="caption">Repaid Loans</div>
+                            <div id="table">
+                                <div class="header-row row">
+                                    <span class="cell primary">user</span>
+                                    <span class="cell">createdOn</span>
+                                    <span class="cell">amount</span>
+                                    <span class="cell">repaid</span>
+                                    <span class="cell"></span>
+                                </div>
+                                <div class="row">
+                                    <input type="radio" name="expand">
+                                    <span class="cell primary" data-label="User">kazmobileapp@gmail.com</span>
+                                    <span class="cell" data-label="CreatedOn">2019-05-05T20:32:01.206Z</span>
+                                    <span class="cell" data-label="Amount">₦4000</span>
+                                    <span class="cell" data-label="Engine">true</span>
+                                    <span class="cell" data-label="Trans"><a href="">view</a></span>
+                                </div>
+                                <div class="row">
+                                    <input type="radio" name="expand">
+                                    <span class="cell primary" data-label="User">kaztech2016@gmail.com</span>
+                                    <span class="cell" data-label="CreatedOn">2019-05-05T20:32:01.206Z</span>
+                                    <span class="cell" data-label="Amount">₦30000</span>
+                                    <span class="cell" data-label="Engine">true</span>
+                                    <span class="cell" data-label="Trans"><a href="">view</a></span>
+                                </div>
+                                <div class="row">
+                                    <input type="radio" name="expand">
+                                    <span class="cell primary" data-label="User">tobi4real@gmail.com</span>
+                                    <span class="cell" data-label="CreatedOn">2019-05-05</span>
+                                    <span class="cell" data-label="Amount">₦1000</span>
+                                    <span class="cell" data-label="Engine">true</span>
+                                    <span class="cell" data-label="Trans"><a href="">view</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel" id="repay">
+                    <div class="form-container loan">
+                        <form>
+                            <div class="input-container">
+                                <i class="fas fa-wallet icon"></i>
+                                <input type="text" class="input-field" placeholder="LoanId">
+                            </div>
+                            <div class="input-container">
+                                <i class="fas fa-business-time icon"></i>
+                                <input type="numder" class="input-field" placeholder="Amount">
+                            </div>
+                            <button type="submit" class="btn-form">PAY</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="hover_popup">
+                <span class="helper"></span>
+                <div>
+                    <div class="popupCloseButton">X</div>
+                    <section class="content">
+                        <div class="compose-box1 compose-container">
+                            <div action="" class="boxx">
+
+                                <section id="admin-dashboard-section">
+
+                                    <!-- <section class ="accounts"> -->
+                                    <article class="account-details">
+                                        <div class="clientloanss">
+                                            <article>
+                                                <p>id</p>
+                                                <p>5</p>
+                                            </article>
+                                            <article>
+                                                <p>Email</p>
+                                                <p>kazmobileapp@gmail.com</p>
+                                            </article>
+                                            <article>
+                                                <p>First Name</p>
+                                                <p>Kazeem</p>
+                                            </article>
+                                            <article>
+                                                <p>Last Name</p>
+                                                <p>&#8358; 1000000.00</p>
+                                            </article>
+                                            <article>
+                                                <p>Address</p>
+                                                <p>27, Banjoko street, Lagos, Island</p>
+                                            </article>
+                                            <article>
+                                                <p>Status</p>
+                                                <p>Not verified</p>
+                                            </article>
+                                            <article>
+                                                <p>Created Date</p>
+                                                <p>2019-05-05</p>
+                                            </article>
+                                            <article>
+                                                <button class="button">Verified</button>
+                                                <button class="button">Not verified</button>
+                                            </article>
+                                        </div>
+
+
+                                    </article>
+                                    <!-- </section> -->
+                                </section>
+                            </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="hover_popup loan_hover_popup">
+            <span class="helper"></span>
+            <div>
+                <div class="popupCloseButton loan_popupCloseButton">X</div>
+                <section class="content">
+                    <div class="compose-box1 compose-container">
+                        <div action="" class="boxx">
+
+                            <section id="admin-dashboard-section">
+
+                                <!-- <section class ="accounts"> -->
+                                <article class="account-details">
+                                    <h1>Loan Application</h1>
+                                    <div class="clientloanss">
+                                        <article>
+                                            <p>Name</p>
+                                            <p>Ajala Bayeku</p>
+                                        </article>
+                                        <article>
+                                            <p>id</p>
+                                            <p>1</p>
+                                        </article>
+                                        <article>
+                                            <p>Created Date</p>
+                                            <p>2019-05-05</p>
+                                        </article>
+                                        <article>
+                                            <p>Amount</p>
+                                            <p>&#8358; ₦1000000.00</p>
+                                        </article>
+                                        <article>
+                                            <p>Tenor</p>
+                                            <p>12</p>
+                                        </article>
+                                        <article>
+                                            <p>Balance</p>
+                                            <p>&#8358; 0.00</p>
+                                        </article>
+                                        <article>
+                                            <p>Interest</p>
+                                            <p>0.05</p>
+                                        </article>
+                                        <article>
+                                            <p>Payment Installment</p>
+                                            <p>&#8358; ₦10000.00</p>
+                                        </article>
+                                        <article class="buttons">
+                                            <p>Status</p>
+                                            <p>Verified</p>
+                                        </article>
+                                    </div>
+
+
+                                </article>
+                                <!-- </section> -->
+                            </section>
+                        </div>
+                </section>
+            </div>
+        </div>
+        <div class="hover_popup loanapprove_hover_popup">
+                <span class="helper"></span>
+                <div>
+                    <div class="popupCloseButton loanapprove_popupCloseButton">X</div>
+                    <section class="content">
+                        <div class="compose-box1 compose-container">
+                            <div action="" class="boxx">
+    
+                                <section id="admin-dashboard-section">
+    
+                                    <!-- <section class ="accounts"> -->
+                                    <article class="account-details">
+                                        <h1>Loan Approval</h1>
+                                        <div class="clientloanss">
+                                            <article>
+                                                <p>Name</p>
+                                                <p>Ajala Bayeku</p>
+                                            </article>
+                                            <article>
+                                                <p>id</p>
+                                                <p>1</p>
+                                            </article>
+                                            <article>
+                                                <p>Created on</p>
+                                                <p class="time-received"></p>
+                                            </article>
+                                            <article>
+                                                <p>Amount</p>
+                                                <p>&#8358; ₦1000000.00</p>
+                                            </article>
+                                            <article>
+                                                <p>Tenor</p>
+                                                <p>12months</p>
+                                            </article>
+                                            <article>
+                                                <p>Balance</p>
+                                                <p>&#8358; 0.00</p>
+                                            </article>
+                                            <article>
+                                                <p>Interest</p>
+                                                <p>0.05</p>
+                                            </article>
+                                            <article>
+                                                <p>Payment Installment</p>
+                                                <p>&#8358; ₦10000.00</p>
+                                            </article>
+                                            <article class="buttons">
+                                                <p>Status</p>
+                                                <p>Verified</p>
+                                            </article>
+                                            <article>
+                                                <button class="button">Approve</button>
+                                                <button class="button">Reject</button>
+                                            </article>
+                                        </div>
+    
+    
+                                    </article>
+                                    <!-- </section> -->
+                                </section>
+                            </div>
+                    </section>
+                </div>
+            </div>
+    </div>
+
+    <footer class="admin-footer">
+        <p>Western Bank &copy; 2021</p>
+        <script src="script2.js"></script>
+    </footer>
+    </div>
+</body>
+
+</html>
