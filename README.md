@@ -56,6 +56,17 @@ EMI Amount:
 You will be paying monthly instalments for the duration of your borrowing, until the end of the loan period. Each EMI is a combination of principal + interest. With each EMI, you will be paying back more of the principal and costs of interest will gradually reduce.
 
 
+
+Some screenshoots of each Module:
+=================================
+
+1)Home page:
+![image](https://user-images.githubusercontent.com/74001872/148329350-0679d39f-e849-4df8-a098-c60e9a4b07c1.png)
+2)Login and Register Page:
+![image](https://user-images.githubusercontent.com/74001872/148329380-256be6de-c7c5-459d-a925-7a5510bc0d10.png)
+3)
+
+
   
 
 
